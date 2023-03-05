@@ -1,3 +1,5 @@
+variable vpc_id{}
+
 variable db_allocated_storage{
     description= "Amount of storage to allocate for DB instance"
 }
@@ -31,4 +33,11 @@ variable db_final_snapshot{
 
 variable private_subnet_ids{
     description ="to get private subnets ids from netwrok module"
+}
+variable db_sg_name{
+    description ="Database security group name"
+}
+
+variable app_security_group_id{
+    description ="to get application security group id form application module"
 }

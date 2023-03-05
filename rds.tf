@@ -8,5 +8,6 @@ resource "aws_db_instance" "database"{
     password = var.db_password
     db_subnet_group_name= var.private_subnet_ids
     skip_final_snapshot=var.db_final_snapshot
+    vpc_security_group_ids=[aws_security_group.db-security-group.id]
 
 }
