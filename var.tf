@@ -1,4 +1,6 @@
-variable vpc_id{}
+variable vpc_id{
+    description="To get vpc id"
+}
 
 variable db_allocated_storage{
     description= "Amount of storage to allocate for DB instance"
